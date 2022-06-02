@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+
+.context-menu{
+  position: absolute;
+  background-color: #434344;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #3a3a3b;
+  box-shadow: 0px 0px 20px #3a3a3b;
+  backdrop-filter: blur(15px);
+  opacity: 0.7;
+  padding: 5px 0px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.1rem;
+  transition: all 0.2s ease;
+}
+li{
+  padding: 5px 15px;
+}
+
+ul a:hover{
+  background-color: #99999954;
+  border-radius: 4px;
+}
+
+ul .icon{
+  margin-right: 8px;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown-content{
+  display: none;
+  position: fixed;
+  top: calc(100% - 40px);
+  left: calc(100% - 15px);
+  background-color: #434344;
+  border-radius: 15px;
+  padding: 10px;
+  min-width: 140px;
+  z-index: 1;
+}
+
+/* .dropdown-content a{
+  display: block;
+} */
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
